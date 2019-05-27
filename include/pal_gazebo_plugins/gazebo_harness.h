@@ -1,10 +1,11 @@
 /*
- *  gazebo_harness.h
- *  Copyright (c) 2014 PAL Robotics sl. All Rights Reserved
- *  Created on: 10/9/2014
- *      Author: luca
+ * Copyright 2019 PAL Robotics SL. All Rights Reserved
+ *
+ * Unauthorized copying of this file, via any medium is strictly prohibited,
+ * unless it was supplied under the terms of a license agreement or
+ * nondisclosure agreement with PAL Robotics SL. In this case it may not be
+ * copied or disclosed except in accordance with the terms of that agreement.
  */
-
 #ifndef GAZEBO_HARNESS_H
 #define GAZEBO_HARNESS_H
 
@@ -50,6 +51,7 @@
 // Gazebo
 #include <gazebo/common/common.hh>
 #include <gazebo/physics/physics.hh>
+#include <ignition/math.hh>
 #include <ros/ros.h>
 #include <ros/callback_queue.h>
 #include <std_msgs/String.h>
@@ -103,8 +105,8 @@ namespace gazebo {
                                       physics::LinkPtr _link1,
                                       physics::LinkPtr _link2,
                                       std::string _type,
-                                      math::Vector3 _anchor,
-                                      math::Vector3 _axis,
+                                      ignition::math::Vector3<double> _anchor,
+                                      ignition::math::Vector3<double> _axis,
                                       double _upper, double _lower);
     /// \brief Remove a joint.
     /// \param[in] _joint Joint to remove.

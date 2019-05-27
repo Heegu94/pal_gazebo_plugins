@@ -8,6 +8,48 @@ Changelog for package pal_gazebo_plugins
 * Added gazebo world odometry that outputs rpy
 * Contributors: Hilario Tome
 
+1.1.9 (2019-05-20)
+------------------
+* Merge branch 'license-refactor' into 'erbium-devel'
+  Update pal license
+  See merge request common/pal_gazebo_plugins!5
+* Update PAL licenses
+* Contributors: Victor Lopez
+
+1.1.8 (2018-05-17)
+------------------
+* Rotate object position using target link pose
+* Contributors: Victor Lopez
+
+1.1.7 (2018-03-29)
+------------------
+* Actively try to make the attachment on each world update loop
+* Merge branch 'gazebo-attachment-plugin' into 'erbium-devel'
+  Add gazebo_attachment plugin
+  See merge request common/pal_gazebo_plugins!4
+* Improve error checking of gazebo_attachment
+* Add gazebo_attachment plugin
+* Contributors: Hilario Tome, Victor Lopez
+
+1.1.6 (2018-03-08)
+------------------
+* Merge branch 'titanium_simulation_issue' into 'erbium-devel'
+  Control in effort when PID's are set. Otherwise control in position
+  See merge request common/pal_gazebo_plugins!3
+* Control in effort when PID's are set. Otherwise control in position
+* Contributors: Adria Roig, Hilario Tome
+
+1.1.5 (2018-01-30)
+------------------
+* added gazebo_ros depend
+* Merge branch 'gazebo7' into erbium-devel
+* Merge branch 'allow-params-on-namespace' into 'dubnium-devel'
+  Allow gains to be pushed onto a namespace
+  See merge request !2
+* Allow gains to be pushed onto a namespace
+* Added gazebo7 support
+* Contributors: Hilario Tome, Hillario Tome, davidfernandez
+
 1.1.4 (2016-10-14)
 ------------------
 * Added missing depend
